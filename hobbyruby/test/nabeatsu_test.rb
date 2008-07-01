@@ -46,7 +46,7 @@ class NabeatsuTest < Test::Unit::TestCase
   def test_say110
     assert_equal("110", @nabe.say(110))
   end
-  
+
   def test_say113
     assert_equal("ひゃ〜くじゅ〜さ〜ん", @nabe.say(113))
   end
@@ -99,7 +99,11 @@ class NabeatsuTest < Test::Unit::TestCase
     assert_equal("ま〜いなすひゃ〜くさ〜ん", @nabe.say(-103))
   end
 
-  
+  def test_say_10003
+    assert_equal("い〜ちま〜んさ〜ん", @nabe.say(10003))
+  end
+
+
   def test_say_aho1
     assert_equal("い〜ち", @nabe.say_aho(1))
   end
@@ -115,8 +119,12 @@ class NabeatsuTest < Test::Unit::TestCase
   def test_say_aho_0
     assert_equal("ぜ〜ろ", @nabe.say_aho(0))
   end
-  
+
   def test_say_aho_minus_1
     assert_equal("ま〜いなすい〜ち", @nabe.say_aho(-1))
+  end
+
+  def test_say_aho_10000
+    assert_equal("い〜ちま〜ん", @nabe.say_aho(10000))
   end
 end

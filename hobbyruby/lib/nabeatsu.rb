@@ -29,7 +29,8 @@ class Nabeatsu
     1=>"",
     2=>"じゅ〜",
     3=>"ひゃ〜く",
-    4=>"せ〜ん"
+    4=>"せ〜ん",
+    5=>"ま〜ん"
   }
 
   def say(number)
@@ -58,7 +59,7 @@ class Nabeatsu
         else
           ret += AHO_DIGIT_1[number.to_s[cnt ,1].to_i]          
         end
-      elsif i == 1
+      elsif i == 1 or i == 5
         ret += AHO_DIGIT_1[number.to_s[cnt, 1].to_i]
       end
 
