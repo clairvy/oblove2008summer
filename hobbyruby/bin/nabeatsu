@@ -5,6 +5,32 @@ require 'nabeatsu'
 
 nabe = Nabeatsu.new
 
-9999.times {|i|
-  puts nabe.say(i+1)
+from = if ARGV[0]
+         begin
+           Integer(ARGV[0])
+         rescue
+           0
+         end
+       else
+         0
+       end
+
+to = if ARGV[1]
+         begin
+           Integer(ARGV[1])
+         rescue
+           100
+         end
+       else
+         100
+       end
+
+if from > to
+  tmp = to
+  to = from
+  from = tmp
+end
+
+(from..to).each {|i|
+  puts nabe.say(i)
 }

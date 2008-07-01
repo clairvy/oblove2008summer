@@ -98,6 +98,7 @@ class NabeatsuTest < Test::Unit::TestCase
   def test_say_minus103
     assert_equal("ま〜いなすひゃ〜くさ〜ん", @nabe.say(-103))
   end
+
   
   def test_say_aho1
     assert_equal("い〜ち", @nabe.say_aho(1))
