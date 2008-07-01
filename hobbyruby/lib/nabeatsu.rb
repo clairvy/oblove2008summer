@@ -11,6 +11,7 @@ class Nabeatsu
     9=>"きゅ〜",
     0=>""
   }
+  
  AHO_DIGIT_10 = {
     1=>"じゅ〜",
     2=>"に〜じゅ〜",
@@ -22,6 +23,7 @@ class Nabeatsu
     8=>"は〜ちじゅ〜",
     9=>"きゅ〜じゅ〜"
   }
+  
   AHO_KETA = {
     0=>"",
     1=>"",
@@ -42,18 +44,39 @@ class Nabeatsu
   end
 
   def say_aho(number)
+    return "ぜ〜ろ" if number == 0
+    
     cnt = 0
     ret = ""
     number.to_s.length.downto(1) {|i|
 
       if number.to_s[cnt, 1].to_i != 1
-        ret += AHO_DIGIT_1[number.to_s[cnt ,1].to_i]
+        if i == 3 && number.to_s[cnt, 1].to_i == 6
+          ret += "ろ〜っ"
+        elsif (i == 3 || i == 4) && number.to_s[cnt, 1].to_i == 8
+          ret += "は〜っ"
+        else
+          ret += AHO_DIGIT_1[number.to_s[cnt ,1].to_i]          
+        end
       elsif i == 1
         ret += AHO_DIGIT_1[number.to_s[cnt, 1].to_i]
       end
-      ret += AHO_KETA[i]
+
+      if i == 3 && number.to_s[cnt, 1].to_i == 3
+        ret += "びゃ〜く"
+      elsif i == 3 && (number.to_s[cnt, 1].to_i == 6 || number.to_s[cnt, 1].to_i == 8)
+        ret += "ぴゃ〜く"
+      elsif i == 4 && number.to_s[cnt, 1].to_i == 3
+        ret += "ぜ〜ん"
+      elsif number.to_s[cnt, 1].to_i != 0
+        ret += AHO_KETA[i]
+      end
+      
       cnt += 1
     }
+
+    ret = "ま〜いなす" + ret if number < 0
+    
     return ret
 
     #if number < 10
