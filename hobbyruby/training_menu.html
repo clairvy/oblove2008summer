@@ -1,0 +1,230 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> <html lang="ja"> <head> <meta content="text/html; charset=utf-8" http-equiv="Content-Type" /> <title>XPブートキャンプ・トレーニングメニュー</title> <style type="text/css">
+/* default css */
+table {
+font-size: 1em;
+line-height: inherit;
+}
+tr {
+text-align: left;
+}
+div, address, ol, ul, li, option, select {
+margin-top: 0px;
+margin-bottom: 0px;
+}
+p {
+margin: 0px;
+}
+body {
+margin: 6px;
+padding: 0px;
+font-family: Verdana, sans-serif;
+font-size: 10pt;
+background-color: #ffffff;
+}
+@media screen {
+html.pageview {
+background-color: #f3f3f3 !important;
+}
+body {
+min-height: 1100px;
+}
+* html body {
+height: 1100px;
+}
+.pageview body {
+border-top: 1px solid #ccc;
+border-left: 1px solid #ccc;
+border-right: 2px solid #bbb;
+border-bottom: 2px solid #bbb;
+width: 648px !important;
+margin: 15px auto 25px !important;
+padding: 40px 50px;
+}
+/* IE6 */
+* html.pageview body {
+overflow-x: auto;
+}
+}
+h6 { font-size: 10pt }
+h5 { font-size: 11pt }
+h4 { font-size: 12pt }
+h3 { font-size: 13pt }
+h2 { font-size: 14pt }
+h1 { font-size: 16pt }
+blockquote {padding: 10px; border: 1px #DDD dashed }
+a img {border: 0}
+.pb {height: 1px}
+div.google_header, div.google_footer {
+position: relative;
+margin-top: 1em;
+margin-bottom: 1em;
+}
+/* Table of contents */
+.editor div.writely-toc {
+background-color: #f3f3f3;
+border: 1px solid #ccc;
+}
+.writely-toc > ol {
+padding-left: 3em;
+font-weight: bold;
+}
+ol.writely-toc-subheading {
+padding-left: 1em;
+font-weight: normal;
+}
+.writely-toc-none {
+list-style-type: none;
+}
+.writely-toc-decimal {
+list-style-type: decimal;
+}
+.writely-toc-upper-alpha {
+list-style-type: upper-alpha;
+}
+.writely-toc-lower-alpha {
+list-style-type: lower-alpha;
+}
+.writely-toc-upper-roman {
+list-style-type: upper-roman;
+}
+.writely-toc-lower-roman {
+list-style-type: lower-roman;
+}
+.writely-toc-disc {
+list-style-type: disc;
+}
+/* end default css */
+/* custom css */
+/* end custom css */
+/* ui edited css */
+body {
+font-family: Verdana;
+font-size: 10.0pt;
+line-height: normal;
+background-color: #ffffff;
+}
+/* end ui edited css */
+/* editor CSS */
+.editor a:visited {color: #551A8B}
+.editor table.zeroBorder {border: 1px dotted gray}
+.editor table.zeroBorder td {border: 1px dotted gray}
+.editor table.zeroBorder th {border: 1px dotted gray}
+.editor div.google_header, .editor div.google_footer {
+border: 2px #DDDDDD dashed;
+position: static;
+width: 100%;
+min-height: 2em;
+}
+.editor .misspell {background-color: yellow}
+.editor .pb {
+border-top: 1px dashed #C0C0C0;
+border-bottom: 1px dashed #C0C0C0
+}
+.editor .writely-comment {
+font-size: 9pt;
+line-height: 1.4;
+padding: 1px;
+border: 1px dashed #C0C0C0
+}
+/* end editor CSS */
+</style> <style>
+#google-view-footer {
+clear: both;
+border-top: thin solid;
+padding-top: 0.3em;
+padding-bottom: 0.3em;
+}
+#canedit {
+display: none;
+}
+a.google-small-link:link, a.google-small-link:visited {
+color:#112ABB;
+font-family:Arial,Sans-serif;
+font-size:11px !important;
+}
+body, p, div, td {
+direction: inherit;
+}
+@media print {
+#google-view-footer {
+display: none;
+}
+}
+</style> <script>
+function viewOnLoad() {
+if (document.location.href.indexOf('spi=1') != -1) {
+if (navigator.userAgent.toLowerCase().indexOf('msie') != -1) {
+window.print();
+} else {
+window.setTimeout(window.print, 10);
+}
+}
+if (document.location.href.indexOf('hgd=1') != -1) {
+var footer = document.getElementById("google-view-footer");
+if (footer) {
+footer.style.display = 'none';
+}
+}
+}
+</script> </head> <body> <div id="doc-contents"> <h1 id="x_er">XPブートキャンプ・トレーニングメニュー<br id="dlmf0"></h1><h2 id="dlmf1">その1. FizzBuzz問題</h2><blockquote id="ud9e">1から100までの数をプリントするプログラムを書け。ただし3の倍数のときは数の代わりに｢Fizz｣と、5の倍数のときは｢Buzz｣とプリントし、3と5両方の倍数の場合には｢FizzBuzz｣とプリントすること。<br id="haa5"><br id="haa50">-- 「どうしてプログラマに・・・プログラムが書けないのか？」より<br id="ip.00">
+http://www.aoky.net/articles/jeff_atwood/why_cant_programmers_program.htm<br id="n7x8">
+</blockquote>FizzBuzzを実行した結果は以下のようになります。<br id="u:jw"><blockquote id="u2ww">&gt; fizzbuzz<br id="u:jw0">1<br id="mzxz">2<br id="mzxz0">Fizz<br id="mzxz1">4<br id="mzxz2">Buzz<br id="mzxz3">Fizz<br id="mzxz4">7<br id="mzxz5">8<br id="mzxz6">Fizz<br id="mzxz7">Buzz<br id="mzxz8">11<br id="mzxz9">Fizz<br id="yreo">13<br id="yreo0">14<br id="yreo1">FizzBuzz<br id="yreo2">16<br id="yreo3">...<br id="yreo4"></blockquote><br id="leih0"><h2 id="zg1l">その2. ボーリングのスコア計算</h2>下記のように倒したピンの数を入力として渡すと合計スコアを出力するボーリングスコア計算プログラムを書け。<br id="bedk"><br id="okc2"><blockquote id="l:xr">&gt; bowling 10 10 10 10 10 10 10 10 10 10 10 10<br id="kb5d">300<br id="b_5-">&gt; bowling 1 4 4 5 6 4 5 5 10 0 1 7 3 6 4 10 2 8 6<br id="lcbs">133<br id="okc20"></blockquote><h3 id="dmfv">ボーリングのスコア計算法</h3>以下にボーリングのスコア計算方法をしめします。<br id="cf4w"><br id="cf4w0"><blockquote id="etyf"><ol id="dk_t"><li id="dk_t0">フレームにおいてスペア・ストライクがない場合（オープンフレームと呼ぶ）、2回の投球で倒したピンの本数がそのフレームの得点となる。</li><li id="dk_t1">スペアを出した場合、倒した本数である10点に加え、次の1投球で倒したピンの本数がこのフレームの得点に加算される。</li><li id="dk_t2">ストライクを出した場合、倒した本数である10点に加え、続く2投球で倒したピンの本数が加算される。つまり次の投球もストライクだった場合は、さらにその次の投球（2フレーム先の第1投球）で倒したピンの本数まで加算される。</li><li id="dk_t3">第10フレームのみ、スペア・ストライクを出した場合、3投して倒したピンの総数を第10フレームの得点として計算する。</li><li id="dk_t4">各フレームの得点の合計が1ゲームの得点となる。最高得点は300点となる。</li></ol><br id="qyyc">-- 「ボウリング - Wikipedia」 より<br id="mw.i">http://ja.wikipedia.org/wiki/%E3%83%9C%E3%82%A6%E3%83%AA%E3%83%B3%E3%82%B0#.E7.82.B9.E6.95.B0.E3.81.AE.E8.A8.88.E7.AE.97.E6.B3.95<br id="dmfv0"></blockquote><h2 id="zg1l0">その3. 2分探索</h2>別紙「二分探索」、または下記リンク先を参照。<br id="k7ue"><br id="ve06">http://ja.wikipedia.org/wiki/%E4%BA%8C%E5%88%86%E6%8E%A2%E7%B4%A2<br id="tdw1"><br id="tdw10">
+<h2 id="zg1l1">その4. コインを減らす払い方</h2><blockquote id="jdx4">いま、あなたの財布の中にはコインがたくさん入っています。これを少しでも減らしたいと思います。<br id="qvww"><br id="qvww0">支払うべき金額と持っているコインの種類と数を与えられたときに、どのコインを何枚出せばおつりを受け取った後のコインの数が最も少なくなるか返す関数を作ってください。おつりは最も枚数が少なくなる方法で渡されます。<br id="qvww1"><br id="qvww2">例えば、1円玉2枚、10円玉4枚、100円玉3枚を持っていて、147円支払う場合、 1円玉2枚と100円玉2枚を渡して50円玉1枚と5円玉1枚を受け取るのが2枚減で最も枚数を減らせます。Pythonで表現するならば下のような挙動をする関数を作ってください。<br id="qvww3"><br id="qvww4">&gt;&gt;&gt; pay(147, {1: 2, 10: 4, 100: 3})<br id="qvww5">{1: 2, 100: 2}<br id="qvww6"><br id="qvww7">また、「渡した硬貨がおつりで返ってくるような渡し方は禁止」とします。 <br id="haa51"><br id="haa52">-- どう書く？org 「コインを減らす払い方」より<br id="oceu">http://ja.doukaku.org/3/<br id="qvww8"></blockquote>
+<h2 id="zg1l2">おまけ. (ワンモアセット！)世界のナベアツ問題<br id="ouju"> </h2>
+1から100までの数をプリントするプログラムを書け。ただし3の倍数と3がつく数字のときはアホになります。<br id="n106"><br id="dlnm">ナベアツ以下のように実行されます。<br id="n1060"><blockquote id="dlnm0">&gt;nabeatsu<br id="n1061">1<br id="n1062">2<br id="n1063">さ〜ん<br id="n1064">4<br id="n1065">5<br id="n1066">ろ〜く<br id="m0ve">7<br id="m0ve0">8<br id="m0ve1">きゅ〜<br id="m0ve2">10<br id="m0ve3">11<br id="m0ve4">じゅ〜に〜<br id="m0ve5">じゅ〜さ〜ん<br id="dlnm1">14<br id="dlnm2">じゅ〜ご〜<br id="ky..">...<br id="dlnm3"></blockquote><br id="ky..0"> <br clear="all" /> </div> <div id="google-view-footer"> <div id="canedit" style="float:right"> <a class="google-small-link" id="editlink" href="Edit?tab=edit&dr=true&docid=d92q2r8_22x3d6mbdt" title="このページを編集"> このページを編集 (権限あり)</a> </div> <div id="maybecanedit" style="float:right"><a class="google-small-link" id="editpermissionlink" href="Edit?tab=edit&dr=true&docid=d92q2r8_22x3d6mbdt" title="このページを編集"> このページを編集 (権限がある場合)</a> <span style="color:#676767;">|</span> <a id="abuselink" class="google-small-link" target="_blank" href="http://docs.google.com/support/bin/request.py?hl=ja&page=troubleshooter.cs&problem=abuse&contact_type=abuse&stage=fm&contact_typemaster=abuse&Action.Search=Continue&ctx=direct&docurl=http%3A%2F%2Fdocs.google.com%2FDoc%3Fid%3Dd92q2r8_22x3d6mbdt">スパム行為の報告</a>&nbsp;</div> <div style="float:left"> <a title="Google ドキュメントについて" class="google-small-link" href="/"> Google ドキュメント -- ウェブ ワープロ、プレゼンテーション、スプレッドシート</a> </div> <p> &nbsp; </div> <script><!--
+    viewOnLoad();
+    
+    
+    var urchinPage = "/View";
+  --></script> <script src="https://ssl.google-analytics.com/ga.js" type="text/javascript"></script>
+<script type="text/javascript">
+var page = typeof urchinPage != 'undefined' ? urchinPage : window.location.href;
+var account = 'UA-18065-1';
+if (typeof _gat != 'undefined') {
+var pageTracker = _gat._getTracker(account);
+pageTracker._setAllowAnchor(true);
+pageTracker._trackPageview(page);
+}
+</script> <script><!--
+    
+    function getXHR() {
+      if (typeof XMLHttpRequest != "undefined") {
+        return new XMLHttpRequest();
+      }
+      try { return new ActiveXObject("Msxml2.XMLHTTP.6.0") } catch(e) {}
+      try { return new ActiveXObject("Msxml2.XMLHTTP.3.0") } catch(e) {}
+      try { return new ActiveXObject("Msxml2.XMLHTTP") } catch(e) {}
+      try { return new ActiveXObject("Microsoft.XMLHTTP") } catch(e) {}
+      return null;
+    }
+    var req = getXHR();
+    if (req) {
+      
+        var docid = 'd92q2r8_22x3d6mbdt';
+        var doctitle = 'XPブートキャンプ・トレーニングメニュー';
+      
+      doctitle = doctitle.replace(/\s+/g, '_');
+      req.onreadystatechange = function() {
+        try {
+          if (req.readyState == 4 && req.status == 200) {
+            var id = req.responseText || '';
+            id = id.replace(/^[\s]+|[\s]+$/g, ''); 
+            if (id) {
+              if (typeof _gat != 'undefined') {
+                var userPageTracker = _gat._getTracker(id);
+                userPageTracker._setAllowAnchor(true);
+                // Use the analytics id as a unique cookie path for this user.
+                userPageTracker._setCookiePath('/u/' + id);
+                userPageTracker._trackPageview(doctitle);
+              }
+            }
+          }
+        } catch (ex) {
+          // just ignore errors
+        }
+      }
+      req.open('POST', 'MiscCommands', true);
+      req.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
+      req.send('command=getanalyticscode&docid=' + encodeURIComponent(docid));
+    }
+  --></script> </body> </html> 
