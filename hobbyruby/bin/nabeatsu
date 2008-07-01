@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+
+$:.unshift(File.expand_path("../lib", File.dirname(__FILE__)))
+require 'nabeatsu'
+
+nabe = Nabeatsu.new
+
+100.times {|i|
+  puts nabe.say(i+1)
+}
