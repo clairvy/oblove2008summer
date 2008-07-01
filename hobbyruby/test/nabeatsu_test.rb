@@ -39,6 +39,11 @@ class NabeatsuTest < Test::Unit::TestCase
     assert_equal("さ〜んじゅ〜", @nabe.say(30))
   end
 
+  def test_say103
+    assert_equal("ひゃ〜くさ〜ん", @nabe.say(103))
+  end
+
+
   def test_say_aho1
     assert_equal("い〜ち", @nabe.say_aho(1))
   end
