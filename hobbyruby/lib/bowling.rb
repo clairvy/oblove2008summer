@@ -1,9 +1,12 @@
 class Bowling
-  FRAME_SIZE = 10
-    
-  def score(pins)
-    @pins = pins
 
+  FRAME_SIZE = 10
+
+  def initialize(pins)
+    @pins = pins
+  end
+
+  def score()
     total = 0
     index = 0
     FRAME_SIZE.times do |frame|
@@ -15,10 +18,10 @@ class Bowling
         index += 2
       else
         total += @pins[index] + @pins[index + 1]
-        index += 2        
+        index += 2
       end
     end
-    
+
     return total
   end
 
