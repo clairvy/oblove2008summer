@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+$:.unshift(File.expand_path("../lib", File.dirname(__FILE__)))
+require 'bowling'
+
+pins = ARGV.inject([]) { |result, element| result << element.to_i }
+puts Bowling.new(pins).score()
